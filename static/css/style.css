@@ -1,0 +1,38 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+}
+
+.spinner-border {
+    border-top-color: transparent !important;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.gradient-indigo {
+    background: linear-gradient(to right, #4c6ef5, #5a8dee);
+}
+
+.gradient-blue {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.gradient-green {
+    background: linear-gradient(to right, #28a745, #218838);
+}
